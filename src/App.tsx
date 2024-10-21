@@ -1,5 +1,11 @@
-const App = () => {
-  return <div>App</div>;
-};
+import { RouterProvider } from 'react-router-dom';
+import router from './router/index.tsx';
+import { AuthProvider } from './context/authContext.tsx';
 
-export default App;
+export const App = () => {
+  return (
+    <AuthProvider>
+      <RouterProvider router={router}></RouterProvider>
+    </AuthProvider>
+  );
+};
