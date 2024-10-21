@@ -11,7 +11,7 @@ export const Layout = () => {
   return (
     <div className="grid__layout__container">
       <div className="grid__layout__header">header</div>
-      <div className="grid__layout__aside">SIDEBAR</div>
+      <div className="grid__layout__sidebar">SIDEBAR</div>
       <div className="grid__layout__main">
         <Outlet />
       </div>
