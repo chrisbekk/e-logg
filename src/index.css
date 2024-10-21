@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.grid__layout__container {
+  display: grid;
+  grid-template-rows: 300px auto auto;
+}
+
+.grid__layout__header {
+  background-color: aquamarine;
+  padding: 2rem 0;
+}
+
+.grid__layout__aside {
+  background-color: burlywood;
+  padding: 2rem 0;
+}
+
+.grid__layout__main {
+  background-color: chartreuse;
+  padding: 2rem 0;
+}
