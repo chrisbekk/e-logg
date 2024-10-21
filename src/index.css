@@ -16,14 +16,14 @@ body {
   overflow-y: hidden;
   display: grid;
   grid-template-rows: auto 1fr;
-  grid-template-columns: 10rem 1fr;
+  grid-template-columns: auto 1fr;
 
   grid-template-areas: 'header header' 'sidebar main';
 }
 
 .grid__layout__header {
   background-color: aquamarine;
-  padding: 2rem;
+
   grid-area: header;
 }
 
