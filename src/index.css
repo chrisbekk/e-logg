@@ -23,19 +23,16 @@ body {
 
 .grid__layout__header {
   background-color: aquamarine;
-
   grid-area: header;
 }
 
 .grid__layout__sidebar {
   background-color: burlywood;
-  padding: 2rem;
   grid-area: sidebar;
 }
 
 .grid__layout__main {
   background-color: chartreuse;
-  padding: 2rem;
   grid-area: main;
 }
 

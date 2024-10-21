@@ -3,6 +3,8 @@ import { Outlet, useNavigate } from 'react-router-dom';
 import { authContext } from '../context/authContext';
 
 import '../index.css';
+import { Header } from '../components/header/Header';
+import { Sidebar } from '../components/sidebar/Sidebar';
 
 export const Layout = () => {
   const navigate = useNavigate();
@@ -10,8 +12,8 @@ export const Layout = () => {
 
   return (
     <div className="grid__layout__container">
-      <header className="grid__layout__header">header</header>
-      <aside className="grid__layout__sidebar">SIDEBAR</aside>
+      <Header title="eLogg" />
+      <Sidebar />
       <main className="grid__layout__main">
         <Outlet />
       </main>
