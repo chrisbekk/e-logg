@@ -1,3 +1,4 @@
+@import './fonts.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,7 +19,7 @@ body {
   grid-template-rows: auto 1fr;
   grid-template-columns: auto 1fr;
 
-  grid-template-areas: 'header header' 'sidebar main';
+  grid-template-areas: 'sidebar header' 'sidebar main';
 }
 
 .grid__layout__header {
