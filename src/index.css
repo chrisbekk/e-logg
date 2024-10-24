@@ -35,7 +35,12 @@ body {
   );
   grid-area: sidebar;
   width: 250px;
+  padding: 0 10px;
   padding-top: 95px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .grid__layout__main {
