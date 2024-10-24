@@ -3,6 +3,7 @@ import { Layout } from '../layout/Layout';
 import { Root } from '../layout/Root';
 import { AuthRoot } from '../layout/AuthRoot';
 import { DashboardPage } from '../pages/auth/DashboardPage';
+import { TablePage } from '../pages/auth/TablePage';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
           {
             index: true,
             element: <DashboardPage />,
+          },
+          {
+            path: 'table/',
+            element: <TablePage />,
           },
         ],
       },
