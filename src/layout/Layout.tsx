@@ -65,7 +65,7 @@ export const Layout = () => {
   };
 
   return (
-    <div className="grid__layout__container font-helvetica font-light text-white subpixel-antialiased">
+    <div className="grid__layout__container font-helvetica font-light bg-custom_800_blue text-white subpixel-antialiased">
       <Header title={activeTab?.text || 'Default Title'} />
       <Sidebar tabsArray={tabsArray} setTabs={activeTabHandler} />
       <main className="grid__layout__main">
