@@ -6,7 +6,7 @@ import { ModalHeader } from '../modal/ModalHeader';
 import { ModalBody } from '../modal/ModalBody';
 
 export const HeaderMenu = () => {
-  const [isVisible, setIsVisible] = useState<boolean>(true);
+  const [isVisible, setIsVisible] = useState<boolean>(false);
   const [searchTerm, setSearchTerm] = useState<string>('');
   const closeModal = () => {
     setIsVisible(false);
