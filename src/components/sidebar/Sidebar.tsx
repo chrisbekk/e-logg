@@ -1,66 +1,21 @@
-import { useState } from 'react';
-
 import { SidebarItem } from './SidebarItem';
-import { PiHouse } from 'react-icons/pi';
 
-const items = [
-  {
-    text: 'Sidebar Menu Item 1',
-    icon: <PiHouse />,
-    isActive: true,
-  },
-  {
-    text: 'Sidebar Menu Item 2',
-    icon: <PiHouse />,
-    isActive: false,
-  },
-  {
-    text: 'Sidebar Menu Item 3',
-    icon: <PiHouse />,
-    isActive: false,
-  },
-  {
-    text: 'Sidebar Menu Item 4',
-    icon: <PiHouse />,
-    isActive: false,
-  },
-  {
-    text: 'Sidebar Menu Item 5',
-    icon: <PiHouse />,
-    isActive: false,
-  },
-  {
-    text: 'Sidebar Menu Item 6',
-    icon: <PiHouse />,
-    isActive: false,
-  },
-  {
-    text: 'Sidebar Menu Item 7',
-    icon: <PiHouse />,
-    isActive: false,
-  },
-];
+import { tSidebarItem } from '../../types/types';
 
-export const Sidebar = () => {
-  const [tabs, setTabs] = useState(items);
+type SidebarProps = {
+  tabsArray: tSidebarItem[];
+  setTabs: (tabText: string) => void;
+};
 
-  const activeTabHandler = (tabText: string) => {
-    const updatedItems = items.map(item =>
-      item.text === tabText
-        ? { ...item, isActive: true }
-        : { ...item, isActive: false },
-    );
-    setTabs(updatedItems);
-  };
-
+export const Sidebar = ({ tabsArray, setTabs }: SidebarProps) => {
   return (
     <aside className="grid__layout__sidebar shadow-2xl">
-      {tabs.map((item, index) => (
+      {tabsArray.map((tab, index) => (
         <SidebarItem
-          text={item.text}
-          isActive={item.isActive}
-          onClick={activeTabHandler}
-          icon={item.icon}
+          text={tab.text}
+          isActive={tab.isActive}
+          onClick={setTabs}
+          icon={tab.icon}
           key={index}
         />
       ))}

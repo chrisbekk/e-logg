@@ -8,7 +8,7 @@ export const Header = ({ title }: HeaderProps) => {
   return (
     <header className="grid__layout__header bg-custom_800_blue">
       <div className="h-full flex items-center justify-between px-10">
-        <h1 className="font-semibold text-2xl">{title}</h1>
+        <h1 className="font-thin text-custom_500_gray text-lg">{title}</h1>
         <HeaderMenu />
       </div>
     </header>
