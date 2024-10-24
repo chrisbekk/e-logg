@@ -23,7 +23,6 @@ body {
 }
 
 .grid__layout__header {
-  background-color: aquamarine;
   grid-area: header;
   height: 60px;
 }
