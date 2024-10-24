@@ -28,14 +28,18 @@ body {
 }
 
 .grid__layout__sidebar {
-  background-color: burlywood;
+  background: linear-gradient(
+    120deg,
+    rgba(32, 41, 64, 1) 70%,
+    rgba(56, 65, 89, 1) 100%
+  );
   grid-area: sidebar;
   width: 250px;
   padding-top: 95px;
 }
 
 .grid__layout__main {
-  background-color: chartreuse;
+  background-color: '#1A2035';
   grid-area: main;
   padding-top: 35px;
 }

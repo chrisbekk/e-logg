@@ -11,7 +11,7 @@ export const Layout = () => {
   const { setIsAuth } = useContext(authContext);
 
   return (
-    <div className="grid__layout__container text-white subpixel-antialiased">
+    <div className="grid__layout__container font-helvetica font-light text-white subpixel-antialiased">
       <Header title="eLogg" />
       <Sidebar />
       <main className="grid__layout__main">
